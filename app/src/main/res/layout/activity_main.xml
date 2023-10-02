@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/txEntera"
+        android:layout_width="172dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="121dp"
+        android:layout_marginEnd="223dp"
+        android:layout_marginBottom="23dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Enter a"
+        app:layout_constraintBottom_toTopOf="@+id/txEnterb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txEnterb"
+        android:layout_width="172dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="226dp"
+        android:layout_marginBottom="31dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Enter b"
+        app:layout_constraintBottom_toTopOf="@+id/txEnterc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txEntera" />
+
+    <EditText
+        android:id="@+id/txEnterc"
+        android:layout_width="172dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="230dp"
+        android:layout_marginBottom="42dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Enter c"
+        app:layout_constraintBottom_toTopOf="@+id/btnCal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txEnterb" />
+
+    <Button
+        android:id="@+id/btnCal"
+        android:onClick="calcuate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="165dp"
+        android:layout_marginBottom="335dp"
+        android:backgroundTint="#7A4848"
+        android:text="CALCULATE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txEnterc" />
+</androidx.constraintlayout.widget.ConstraintLayout>
